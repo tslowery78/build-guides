@@ -53116,7 +53116,7 @@ const STEPS = [
   { t: "6. Drill the holes (cutaway view)", cam: [2.5, 2.2, 6.5], look: [-7, -0.2, 0.9],
     d: ["5/32 in masonry bit. Drill on HAMMER mode.",
         "Tape flag on the bit 2 in from the tip. Drill until the tape touches carpet.",
-        "Hit metal (an old nail)? Move 1/2 in along the strip. Vacuum the dust out."],
+        "Hit metal (old nail)? Move 1/2 in sideways and drill a new 3/16 in hole in the strip there too. Vacuum dust out."],
     show: { cut: true, holes: true, drill: true, tapeFlag: true } },
   { t: "7. Screw it down", cam: [14, 13, 17], look: [1, 0.5, 0.9],
     d: ["T25 bit, drill on normal (NOT hammer), low clutch setting.",
@@ -53131,7 +53131,7 @@ const STEPS = [
 ];
 
 const params = new URLSearchParams(location.search);
-let step = Math.max(0, Math.min(STEPS.length - 1, parseInt(params.get("step") || "0", 10)));
+let step = Math.max(0, Math.min(STEPS.length - 1, (parseInt(params.get("step"), 10) || 0)));
 const shot = params.has("shot");
 
 const renderer = new T.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
