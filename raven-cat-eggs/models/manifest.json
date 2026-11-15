@@ -1,100 +1,166 @@
 {
+  "version": 2,
   "units": "mm",
   "egg_height_mm": 55.0,
-  "wall_radial_mm": 0.6,
-  "floor_mm": 0.6,
-  "animal_height_mm": 32.0,
+  "animal_height_mm": 32,
+  "shell_wall_normal_mm": 1.4,
+  "groove_remaining_normal_mm": 0.9,
+  "floor_mm": 1.2,
+  "seam_height_mm": 20.0,
+  "pause_candidate_mm": 39.0,
+  "seat_inner_radius_mm": 11,
   "review_only": true,
+  "placements": [
+    {
+      "name": "raven_eye_left_white",
+      "kind": "raven",
+      "eye_origin": [
+        -4.916172981262207,
+        -5.722026920318603,
+        25.044660568237305
+      ],
+      "assembly_z": 1.2
+    },
+    {
+      "name": "raven_eye_left_black",
+      "kind": "raven",
+      "eye_origin": [
+        -4.916172981262207,
+        -5.722026920318603,
+        25.044660568237305
+      ],
+      "assembly_z": 1.2
+    },
+    {
+      "name": "raven_eye_right_white",
+      "kind": "raven",
+      "eye_origin": [
+        4.916175365447998,
+        -5.722026920318603,
+        25.044660568237305
+      ],
+      "assembly_z": 1.2
+    },
+    {
+      "name": "raven_eye_right_black",
+      "kind": "raven",
+      "eye_origin": [
+        4.916175365447998,
+        -5.722026920318603,
+        25.044660568237305
+      ],
+      "assembly_z": 1.2
+    },
+    {
+      "name": "raven_pink",
+      "kind": "raven",
+      "assembly_z": 1.2
+    },
+    {
+      "name": "cat_eye_left_white",
+      "kind": "cat",
+      "eye_origin": [
+        -3.6075592041015625,
+        -6.765701389312744,
+        22.732572555541992
+      ],
+      "assembly_z": 1.2
+    },
+    {
+      "name": "cat_eye_left_black",
+      "kind": "cat",
+      "eye_origin": [
+        -3.6075592041015625,
+        -6.765701389312744,
+        22.732572555541992
+      ],
+      "assembly_z": 1.2
+    },
+    {
+      "name": "cat_eye_right_white",
+      "kind": "cat",
+      "eye_origin": [
+        3.6075618267059326,
+        -6.765701389312744,
+        22.732572555541992
+      ],
+      "assembly_z": 1.2
+    },
+    {
+      "name": "cat_eye_right_black",
+      "kind": "cat",
+      "eye_origin": [
+        3.6075618267059326,
+        -6.765701389312744,
+        22.732572555541992
+      ],
+      "assembly_z": 1.2
+    },
+    {
+      "name": "cat_pink",
+      "kind": "cat",
+      "assembly_z": 1.2
+    },
+    {
+      "name": "egg_blue",
+      "kind": "shell"
+    }
+  ],
   "parts": [
     {
       "name": "raven_pink",
       "color": "pink",
-      "vertices": 56112,
-      "triangles": 112220,
-      "bounds_mm": [
-        [
-          -9.45772647857666,
-          -14.652325630187988,
-          0.6000014543533325
-        ],
-        [
-          9.457505226135254,
-          11.00931167602539,
-          32.599998474121094
-        ]
-      ]
+      "triangles": 109710
     },
     {
-      "name": "raven_blue_eyes",
-      "color": "blue",
-      "vertices": 7524,
-      "triangles": 15040,
-      "bounds_mm": [
-        [
-          -6.724951267242432,
-          -7.420638084411621,
-          23.372089385986328
-        ],
-        [
-          6.724953651428223,
-          -4.823415756225586,
-          27.917232513427734
-        ]
-      ]
+      "name": "raven_eye_left_white",
+      "color": "white",
+      "triangles": 6556
+    },
+    {
+      "name": "raven_eye_left_black",
+      "color": "black",
+      "triangles": 3838
+    },
+    {
+      "name": "raven_eye_right_white",
+      "color": "white",
+      "triangles": 6556
+    },
+    {
+      "name": "raven_eye_right_black",
+      "color": "black",
+      "triangles": 3838
     },
     {
       "name": "cat_pink",
       "color": "pink",
-      "vertices": 50667,
-      "triangles": 101334,
-      "bounds_mm": [
-        [
-          -10.077593803405762,
-          -10.077571868896484,
-          0.6000015735626221
-        ],
-        [
-          12.27048110961914,
-          10.077577590942383,
-          32.599998474121094
-        ]
-      ]
+      "triangles": 97330
     },
     {
-      "name": "cat_blue_eyes",
-      "color": "blue",
-      "vertices": 7524,
-      "triangles": 15040,
-      "bounds_mm": [
-        [
-          -5.485465049743652,
-          -8.351747512817383,
-          20.960477828979492
-        ],
-        [
-          5.485467433929443,
-          -5.9796552658081055,
-          25.704668045043945
-        ]
-      ]
+      "name": "cat_eye_left_white",
+      "color": "white",
+      "triangles": 6556
+    },
+    {
+      "name": "cat_eye_left_black",
+      "color": "black",
+      "triangles": 3838
+    },
+    {
+      "name": "cat_eye_right_white",
+      "color": "white",
+      "triangles": 6556
+    },
+    {
+      "name": "cat_eye_right_black",
+      "color": "black",
+      "triangles": 3838
     },
     {
       "name": "egg_blue",
       "color": "blue",
-      "vertices": 35844,
-      "triangles": 71680,
-      "bounds_mm": [
-        [
-          -21.040203094482422,
-          -21.040203094482422,
-          0.0
-        ],
-        [
-          21.040203094482422,
-          21.040203094482422,
-          55.0
-        ]
-      ]
+      "triangles": 144320
     }
   ]
 }
