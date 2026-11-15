@@ -1,8 +1,8 @@
 {
-  "version": 3,
+  "version": 4,
   "units": "mm",
   "egg_height_mm": 55.0,
-  "animal_height_mm": 32,
+  "animal_height_mm": 36.8,
   "shell_wall_normal_mm": 1.4,
   "groove_remaining_normal_mm": 0.9,
   "floor_mm": 1.2,
@@ -99,164 +99,73 @@
   ],
   "crack_corner_rounding_degrees": 1,
   "groove_half_width_mm": 0.6,
-  "pause_candidate_mm": 39.0,
   "seat_inner_radius_mm": 11,
   "review_only": true,
   "placements": [
     {
-      "name": "raven_eye_left_white",
-      "kind": "raven",
-      "eye_origin": [
-        -4.916172981262207,
-        -5.722026920318603,
-        25.044660568237305
-      ],
-      "assembly_z": 1.2
-    },
-    {
-      "name": "raven_eye_left_black",
-      "kind": "raven",
-      "eye_origin": [
-        -4.916172981262207,
-        -5.722026920318603,
-        25.044660568237305
-      ],
-      "assembly_z": 1.2
-    },
-    {
-      "name": "raven_eye_right_white",
-      "kind": "raven",
-      "eye_origin": [
-        4.916175365447998,
-        -5.722026920318603,
-        25.044660568237305
-      ],
-      "assembly_z": 1.2
-    },
-    {
-      "name": "raven_eye_right_black",
-      "kind": "raven",
-      "eye_origin": [
-        4.916175365447998,
-        -5.722026920318603,
-        25.044660568237305
-      ],
-      "assembly_z": 1.2
+      "name": "egg_blue",
+      "kind": "shell",
+      "assembly_z": 0
     },
     {
       "name": "raven_pink",
       "kind": "raven",
-      "assembly_z": 1.2
+      "assembly_z": 0
     },
     {
-      "name": "cat_eye_left_white",
-      "kind": "cat",
-      "eye_origin": [
-        -3.6075592041015625,
-        -6.765701389312744,
-        22.732572555541992
-      ],
-      "assembly_z": 1.2
-    },
-    {
-      "name": "cat_eye_left_black",
-      "kind": "cat",
-      "eye_origin": [
-        -3.6075592041015625,
-        -6.765701389312744,
-        22.732572555541992
-      ],
-      "assembly_z": 1.2
-    },
-    {
-      "name": "cat_eye_right_white",
-      "kind": "cat",
-      "eye_origin": [
-        3.6075618267059326,
-        -6.765701389312744,
-        22.732572555541992
-      ],
-      "assembly_z": 1.2
-    },
-    {
-      "name": "cat_eye_right_black",
-      "kind": "cat",
-      "eye_origin": [
-        3.6075618267059326,
-        -6.765701389312744,
-        22.732572555541992
-      ],
-      "assembly_z": 1.2
+      "name": "raven_blue_eyes",
+      "kind": "raven",
+      "assembly_z": 0
     },
     {
       "name": "cat_pink",
       "kind": "cat",
-      "assembly_z": 1.2
+      "assembly_z": 0
     },
     {
-      "name": "egg_blue",
-      "kind": "shell"
+      "name": "cat_blue_eyes",
+      "kind": "cat",
+      "assembly_z": 0
     }
   ],
   "parts": [
     {
+      "name": "egg_blue",
+      "color": "blue",
+      "triangles": 217756
+    },
+    {
       "name": "raven_pink",
       "color": "pink",
-      "triangles": 109710
+      "triangles": 109074
     },
     {
-      "name": "raven_eye_left_white",
-      "color": "white",
-      "triangles": 6556
-    },
-    {
-      "name": "raven_eye_left_black",
-      "color": "black",
-      "triangles": 3838
-    },
-    {
-      "name": "raven_eye_right_white",
-      "color": "white",
-      "triangles": 6556
-    },
-    {
-      "name": "raven_eye_right_black",
-      "color": "black",
-      "triangles": 3838
+      "name": "raven_blue_eyes",
+      "color": "blue",
+      "triangles": 9216
     },
     {
       "name": "cat_pink",
       "color": "pink",
-      "triangles": 97330
+      "triangles": 97520
     },
     {
-      "name": "cat_eye_left_white",
-      "color": "white",
-      "triangles": 6556
-    },
-    {
-      "name": "cat_eye_left_black",
-      "color": "black",
-      "triangles": 3838
-    },
-    {
-      "name": "cat_eye_right_white",
-      "color": "white",
-      "triangles": 6556
-    },
-    {
-      "name": "cat_eye_right_black",
-      "color": "black",
-      "triangles": 3838
-    },
-    {
-      "name": "egg_blue",
+      "name": "cat_blue_eyes",
       "color": "blue",
-      "triangles": 218016
+      "triangles": 9216
     }
   ],
   "previews": {
     "hatched": "egg_nest_preview",
-    "meaning": "Actual shell intersected with the designed crack path; not fracture simulation."
-  }
+    "meaning": "Exact lower shell cut at the groove; physical fracture and release untested."
+  },
+  "body_lift_mm": 4.8,
+  "foot_radius_mm": 7.0,
+  "bottom_hole_radius_mm": 7.6,
+  "shoulder_radius_mm": 10.2,
+  "cone_start_mm": 1.8,
+  "print_in_place": true,
+  "no_insertion_pause": true,
+  "beak_underside": "Continuous tapered ramp from chest to hooked beak; no separate support.",
+  "ear_undersides": "Tapered ear roots into the head; no separate support."
 }
