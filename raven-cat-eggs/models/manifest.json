@@ -1,10 +1,10 @@
 {
-  "version": 4,
+  "version": 5,
   "units": "mm",
   "egg_height_mm": 55.0,
   "animal_height_mm": 36.8,
-  "shell_wall_normal_mm": 1.4,
-  "groove_remaining_normal_mm": 0.9,
+  "shell_wall_normal_mm": 0.6,
+  "groove_remaining_normal_mm": 0.4,
   "floor_mm": 1.2,
   "seam_reference_height_mm": 20.0,
   "crack_knots_degrees_mm": [
@@ -132,12 +132,12 @@
     {
       "name": "egg_blue",
       "color": "blue",
-      "triangles": 217756
+      "triangles": 216908
     },
     {
       "name": "raven_pink",
       "color": "pink",
-      "triangles": 109074
+      "triangles": 109122
     },
     {
       "name": "raven_blue_eyes",
@@ -147,7 +147,7 @@
     {
       "name": "cat_pink",
       "color": "pink",
-      "triangles": 97520
+      "triangles": 97568
     },
     {
       "name": "cat_blue_eyes",
@@ -157,7 +157,7 @@
   ],
   "previews": {
     "hatched": "egg_nest_preview",
-    "meaning": "Exact lower shell cut at the groove; physical fracture and release untested."
+    "meaning": "Illustrative cut at groove; tabs remain shown; physical fracture untested."
   },
   "body_lift_mm": 4.8,
   "foot_radius_mm": 7.0,
@@ -167,5 +167,21 @@
   "print_in_place": true,
   "no_insertion_pause": true,
   "beak_underside": "Continuous tapered ramp from chest to hooked beak; no separate support.",
-  "ear_undersides": "Tapered ear roots into the head; no separate support."
+  "ear_undersides": "Tapered ear roots into the head; no separate support.",
+  "lower_wall_normal_mm": 0.9,
+  "lower_wall_transition_z_mm": [
+    4,
+    6
+  ],
+  "crack_start_slot_mm": [
+    0.8,
+    2.4
+  ],
+  "foot_links": {
+    "count": 3,
+    "width_mm": 0.48,
+    "height_mm": 0.64,
+    "colors": "blue links touching pink foot"
+  },
+  "physical_opening_test": "v4 required a vise; v5 unprinted"
 }
