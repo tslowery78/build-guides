@@ -4,8 +4,8 @@
     "floating_islands": [],
     "large_unsupported_increment": [
       {
-        "z_mm": 13.88,
-        "area_mm2": 34.62441010265497
+        "z_mm": 13.08,
+        "area_mm2": 33.131783552551944
       },
       {
         "z_mm": 24.6,
@@ -77,10 +77,6 @@
     "kind": "cat",
     "floating_islands": [],
     "large_unsupported_increment": [
-      {
-        "z_mm": 14.36,
-        "area_mm2": 29.251421015767253
-      },
       {
         "z_mm": 52.6,
         "area_mm2": 2.3200564360989517
