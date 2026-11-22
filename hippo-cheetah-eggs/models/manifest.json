@@ -1,5 +1,5 @@
 {
- "generated": "2026-11-22T00:47:30.448Z",
+ "generated": "2026-11-22T01:06:54.234Z",
  "fixture": false,
  "units": "mm",
  "coordinates": "v7 local origin: egg axis at XY origin, build plate z=0 (up), animals face -Y",
@@ -135,19 +135,19 @@
    "id": "hippo-body",
    "role": "body",
    "file": "models/hippo-body.glb.gz",
-   "bytes": 846819,
-   "sha8": "97121057",
-   "triangles": 250332,
-   "vertices": 131655,
-   "closed": false,
+   "bytes": 856591,
+   "sha8": "712adc2f",
+   "triangles": 250320,
+   "vertices": 131793,
+   "closed": true,
    "openEdges": 0,
-   "nonManifoldEdges": 1,
-   "volumeMm3": 6570.95,
-   "maxQuantErrorMm": 0.00036,
+   "nonManifoldEdges": 0,
+   "volumeMm3": 6470.21,
+   "maxQuantErrorMm": 0.00035,
    "bounds": {
     "min": [
      -10.2,
-     -14.8,
+     -13.6,
      0
     ],
     "max": [
@@ -158,16 +158,16 @@
    },
    "kind": "hippo",
    "source": "hippo-body.stl",
-   "sourceSha256": "f0c4e00cdde8597c3fe9df794511d02de108f07da741613ae510727fb32d0835"
+   "sourceSha256": "c374dba7a3e45019a7b016b81eb72bdd9d5b172de9cc19392d186d3e7c13b1df"
   },
   {
    "id": "hippo-marks",
    "role": "marks",
    "file": "models/hippo-marks.glb.gz",
-   "bytes": 44033,
-   "sha8": "71c8020d",
-   "triangles": 9248,
-   "vertices": 6073,
+   "bytes": 44341,
+   "sha8": "d4bc67b5",
+   "triangles": 9226,
+   "vertices": 6058,
    "closed": true,
    "openEdges": 0,
    "nonManifoldEdges": 0,
@@ -187,16 +187,16 @@
    },
    "kind": "hippo",
    "source": "hippo-marks.stl",
-   "sourceSha256": "9cf72759e3496d16ad3508beea7f787d9bb9720b67be65ae12e533beeb120ef8"
+   "sourceSha256": "9a08f80abe56f78bd4667c9dcfc0181937516d9dc59b12919d00a2c7dd9497b4"
   },
   {
    "id": "hippo-trees",
    "role": "trees",
    "file": "models/hippo-trees.glb.gz",
-   "bytes": 17117,
-   "sha8": "b8a05722",
-   "triangles": 2962,
-   "vertices": 2470,
+   "bytes": 17053,
+   "sha8": "c83f8d67",
+   "triangles": 2924,
+   "vertices": 2448,
    "closed": true,
    "openEdges": 0,
    "nonManifoldEdges": 0,
@@ -205,7 +205,7 @@
    "bounds": {
     "min": [
      -12.664,
-     4.126,
+     4.125,
      1.58
     ],
     "max": [
@@ -216,7 +216,7 @@
    },
    "kind": "hippo",
    "source": "hippo-trees.stl",
-   "sourceSha256": "cbf73d4174962855112072a9857119a4c2ae9cc72dfab956ac4ade20286d2491"
+   "sourceSha256": "554ab1426490f295785c320b495d60c8a00fede05f161ec4f069ed07ef1da643"
   },
   {
    "id": "cheetah-body",
@@ -306,5 +306,5 @@
    "sourceSha256": "18f8f437c71514a11434d3604fba86cf5426bcbb40c99529e82f9f477d5b779b"
   }
  ],
- "build": "7115e70b"
+ "build": "ab0ca198"
 }
