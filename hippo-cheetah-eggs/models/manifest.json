@@ -1,0 +1,310 @@
+{
+ "generated": "2026-11-22T00:37:45.897Z",
+ "fixture": false,
+ "units": "mm",
+ "coordinates": "v7 local origin: egg axis at XY origin, build plate z=0 (up), animals face -Y",
+ "scheme": {
+  "colors": {
+   "purple": "#7B3FA0",
+   "gold": "#E4BD68"
+  },
+  "hippo": {
+   "animal": "purple",
+   "marks": "gold",
+   "shell": "gold"
+  },
+  "cheetah": {
+   "animal": "gold",
+   "marks": "purple",
+   "shell": "purple"
+  }
+ },
+ "layout": {
+  "hippoX": -26,
+  "cheetahX": 26
+ },
+ "shell": {
+  "maxRadius": 22.302522659301758
+ },
+ "facts": {
+  "eggHeightMm": 55,
+  "eggWidthMm": 44.60498237609863,
+  "hippoHeightMm": 33.60434341430664,
+  "cheetahHeightMm": 36.806297302246094,
+  "pairWidthMm": 96.60498237609863
+ },
+ "lid": {
+  "capTriangles": 2131,
+  "skinTriangles": 138435,
+  "volumeComplementErrorPct": 0.3031,
+  "label": "illustrative cut, not a fracture simulation"
+ },
+ "shellParameters": {
+  "wallMm": 0.6,
+  "grooveRemainingMm": 0.4,
+  "manifestVersion": 7
+ },
+ "checks": [],
+ "parts": [
+  {
+   "id": "egg-shell",
+   "role": "shell",
+   "file": "models/egg-shell.glb.gz",
+   "bytes": 326135,
+   "sha8": "b4c31373",
+   "triangles": 216778,
+   "vertices": 109308,
+   "closed": true,
+   "openEdges": 0,
+   "nonManifoldEdges": 0,
+   "volumeMm3": 5018.9,
+   "maxQuantErrorMm": 0.00064,
+   "bounds": {
+    "min": [
+     -22.302,
+     -22.302,
+     0
+    ],
+    "max": [
+     22.303,
+     22.302,
+     55
+    ]
+   },
+   "source": "egg_blue.stl",
+   "sourceSha256": "8bb5fb77d9bece33452eaf4884b9acf266735f850a95b57f7535c0abc0497b4a"
+  },
+  {
+   "id": "egg-nest",
+   "role": "nest",
+   "file": "models/egg-nest.glb.gz",
+   "bytes": 127734,
+   "sha8": "d46edefb",
+   "triangles": 82226,
+   "vertices": 43429,
+   "closed": true,
+   "openEdges": 0,
+   "nonManifoldEdges": 0,
+   "volumeMm3": 2630.69,
+   "maxQuantErrorMm": 0.00051,
+   "bounds": {
+    "min": [
+     -22.302,
+     -22.302,
+     0
+    ],
+    "max": [
+     22.303,
+     22.302,
+     22.618
+    ]
+   },
+   "source": "egg_nest_preview.json",
+   "sourceSha256": "63c8560154ebcd2b63a1143b47524843b3c4bbd6ef7161cb50e0777de15e0701"
+  },
+  {
+   "id": "egg-lid",
+   "role": "lid",
+   "file": "models/egg-lid.glb.gz",
+   "bytes": 233668,
+   "sha8": "bd5a0a38",
+   "triangles": 140487,
+   "vertices": 72298,
+   "closed": false,
+   "openEdges": 2339,
+   "nonManifoldEdges": 0,
+   "volumeMm3": 2373,
+   "maxQuantErrorMm": 0.00056,
+   "bounds": {
+    "min": [
+     -22.202,
+     -22.206,
+     17.863
+    ],
+    "max": [
+     22.198,
+     22.289,
+     55
+    ]
+   },
+   "source": "derived from egg_blue.stl above the groove profile + reversed nest cut faces",
+   "derived": true,
+   "label": "illustrative cut, not a fracture simulation"
+  },
+  {
+   "id": "hippo-body",
+   "role": "body",
+   "file": "models/hippo-body.glb.gz",
+   "bytes": 846819,
+   "sha8": "97121057",
+   "triangles": 250332,
+   "vertices": 131655,
+   "closed": false,
+   "openEdges": 0,
+   "nonManifoldEdges": 1,
+   "volumeMm3": 6570.95,
+   "maxQuantErrorMm": 0.00036,
+   "bounds": {
+    "min": [
+     -10.2,
+     -14.8,
+     0
+    ],
+    "max": [
+     10.2,
+     10.2,
+     33.604
+    ]
+   },
+   "kind": "hippo",
+   "source": "hippo-body.stl",
+   "sourceSha256": "f0c4e00cdde8597c3fe9df794511d02de108f07da741613ae510727fb32d0835"
+  },
+  {
+   "id": "hippo-marks",
+   "role": "marks",
+   "file": "models/hippo-marks.glb.gz",
+   "bytes": 44033,
+   "sha8": "71c8020d",
+   "triangles": 9248,
+   "vertices": 6073,
+   "closed": true,
+   "openEdges": 0,
+   "nonManifoldEdges": 0,
+   "volumeMm3": 4.49,
+   "maxQuantErrorMm": 0.00008,
+   "bounds": {
+    "min": [
+     -5.132,
+     -7.365,
+     29.316
+    ],
+    "max": [
+     5.132,
+     -4.267,
+     31.139
+    ]
+   },
+   "kind": "hippo",
+   "source": "hippo-marks.stl",
+   "sourceSha256": "9cf72759e3496d16ad3508beea7f787d9bb9720b67be65ae12e533beeb120ef8"
+  },
+  {
+   "id": "hippo-trees",
+   "role": "trees",
+   "file": "models/hippo-trees.glb.gz",
+   "bytes": 17117,
+   "sha8": "b8a05722",
+   "triangles": 2962,
+   "vertices": 2470,
+   "closed": true,
+   "openEdges": 0,
+   "nonManifoldEdges": 0,
+   "volumeMm3": 31.95,
+   "maxQuantErrorMm": 0.00023,
+   "bounds": {
+    "min": [
+     -12.664,
+     4.126,
+     1.58
+    ],
+    "max": [
+     12.664,
+     12.664,
+     14.053
+    ]
+   },
+   "kind": "hippo",
+   "source": "hippo-trees.stl",
+   "sourceSha256": "cbf73d4174962855112072a9857119a4c2ae9cc72dfab956ac4ade20286d2491"
+  },
+  {
+   "id": "cheetah-body",
+   "role": "body",
+   "file": "models/cheetah-body.glb.gz",
+   "bytes": 1034788,
+   "sha8": "da1764d4",
+   "triangles": 278276,
+   "vertices": 160119,
+   "closed": true,
+   "openEdges": 0,
+   "nonManifoldEdges": 0,
+   "volumeMm3": 4963.48,
+   "maxQuantErrorMm": 0.00036,
+   "bounds": {
+    "min": [
+     -10.2,
+     -10.205,
+     0
+    ],
+    "max": [
+     12.055,
+     10.2,
+     36.806
+    ]
+   },
+   "kind": "cheetah",
+   "source": "cheetah-body.stl",
+   "sourceSha256": "2fabb1dc6640db273c83374d8814f6ecc7be554ec30c5a6e099eb6597cf0841a"
+  },
+  {
+   "id": "cheetah-marks",
+   "role": "marks",
+   "file": "models/cheetah-marks.glb.gz",
+   "bytes": 318037,
+   "sha8": "1302d403",
+   "triangles": 69874,
+   "vertices": 50191,
+   "closed": false,
+   "openEdges": 0,
+   "nonManifoldEdges": 1,
+   "volumeMm3": 92.73,
+   "maxQuantErrorMm": 0.0003,
+   "bounds": {
+    "min": [
+     -7.372,
+     -10.505,
+     6.624
+    ],
+    "max": [
+     12.05,
+     6.907,
+     35.761
+    ]
+   },
+   "kind": "cheetah",
+   "source": "cheetah-marks.stl",
+   "sourceSha256": "5eb08577d5663a80773bf6bacca0a18cec6a3f8d539234547cecb7430db3c85b"
+  },
+  {
+   "id": "cheetah-trees",
+   "role": "trees",
+   "file": "models/cheetah-trees.glb.gz",
+   "bytes": 17142,
+   "sha8": "00f6a991",
+   "triangles": 2908,
+   "vertices": 2443,
+   "closed": true,
+   "openEdges": 0,
+   "nonManifoldEdges": 0,
+   "volumeMm3": 31.53,
+   "maxQuantErrorMm": 0.00022,
+   "bounds": {
+    "min": [
+     -12.664,
+     4.159,
+     1.58
+    ],
+    "max": [
+     12.664,
+     12.664,
+     13.798
+    ]
+   },
+   "kind": "cheetah",
+   "source": "cheetah-trees.stl",
+   "sourceSha256": "976021630a2415619a54f7cf89b42555ebd1a278d72b2bdcd92c29492582f78d"
+  }
+ ],
+ "build": "6c2c8f80"
+}

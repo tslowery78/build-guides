@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#f3e6dc"><meta name="build" content="6c2c8f80"><title>Hippo &amp; Cheetah · Surprise eggs</title><link rel="icon" href="data:,"><style>
+*{box-sizing:border-box}
+body{margin:0;background:#f3e6dc;color:#35283f;font-family:system-ui,-apple-system,sans-serif}
+main{max-width:1080px;margin:auto;padding:22px 20px 16px}
+header{display:flex;align-items:center;justify-content:space-between;gap:14px}
+.eyebrow{font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:#7a6577;font-weight:650}
+h1{font-size:clamp(25px,5vw,38px);line-height:1.15;margin:6px 0 8px;font-weight:760;letter-spacing:-.04em}
+.sub{margin:0;font-size:15px;color:#665470}
+.badge{background:#ead7f3;color:#5c2d7a;padding:8px 12px;border-radius:100px;font-size:12px;white-space:nowrap;font-weight:650}
+#fixture-banner{margin:10px 0 0;padding:10px 12px;border-radius:12px;background:#fff1c9;color:#6b4a00;border:2px dashed #b88a00;font-size:13px;font-weight:650}
+#fixture-banner[hidden]{display:none}
+#stage{height:min(64vh,590px);min-height:300px;position:relative;margin:12px 0 10px;border:1px solid #e0cbbd;border-radius:22px;overflow:hidden;background:#d4af9d}
+canvas{display:block;width:100%;height:100%;touch-action:none}
+#hint{position:absolute;bottom:12px;left:0;right:0;text-align:center;font-size:12px;color:#5d4552;pointer-events:none}
+#loading{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;background:#d9baa8;font-size:17px;z-index:2;padding:28px;text-align:center}
+#loading[hidden]{display:none}
+.labels{position:absolute;top:14px;left:18px;right:18px;display:flex;justify-content:space-between;color:#5d4552;font-size:12px;pointer-events:none;font-weight:600}
+.controls{display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}
+.group{display:flex;gap:5px;flex-wrap:wrap}
+button{font:inherit;font-size:14px;font-weight:620;background:#fff;border:1px solid #dcc9bd;border-radius:11px;color:#46364f;min-height:44px;padding:10px 14px;cursor:pointer}
+button:hover{background:#f7eee8}
+button[aria-pressed=true]{background:#6a3590;border-color:#6a3590;color:#fff}
+button:focus-visible{outline:3px solid #e4bd68;outline-offset:2px}
+#description{font-size:14px;color:#54445e;line-height:1.45;margin:14px 0 10px;min-height:60px}
+footer{display:flex;gap:12px;justify-content:space-between;align-items:start;border-top:1px solid #e0cbbd;padding-top:12px;font-size:12px;color:#7d6a79;line-height:1.5}
+details{margin:4px 0 14px;font-size:13px;color:#5d4a66}
+summary{cursor:pointer;padding:6px 0}
+details p{margin:8px 0}
+#model-select{margin-top:10px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;margin-right:4px}
+.dot.gold{background:#e4bd68}.dot.purple{background:#7b3fa0}
+@media(max-width:540px){main{padding:16px 12px}header{align-items:start}.badge{font-size:10px;padding:7px 8px}#stage{height:52vh;min-height:310px;margin-top:14px}.controls{gap:8px}button{font-size:13px;padding:9px 11px}.sub{font-size:13px}footer{font-size:11px}.labels{font-size:11px}}
+</style></head><body><main>
+<header><div><h1>Hippo &amp; Cheetah eggs</h1><p class="sub"><span class="dot purple"></span>Purple hippo, gold marks &nbsp; <span class="dot gold"></span>Gold cheetah, purple spots</p></div></header>
+<p id="fixture-banner" hidden></p>
+<div id="stage" role="img" aria-label="Interactive 3D CAD preview of a purple hippo and a gold cheetah hatched from gold and purple eggs"><div id="loading">Loading your models…</div><div class="labels"><span id="object-label">Hippo + Cheetah</span><span id="size-label"></span></div><div id="hint">Drag to turn · Pinch to zoom</div></div>
+<div class="controls"><div class="group" aria-label="Shell view"><button data-mode="hatched" aria-pressed="true">Hatched</button><button data-mode="closed" aria-pressed="false">Closed eggs</button><button data-mode="cutaway" aria-pressed="false">Cutaway</button><button data-mode="trees" aria-pressed="false">Trees</button><button data-mode="animals" aria-pressed="false">Animals</button></div><div class="group"><button id="marks" aria-pressed="true">Marks</button><button id="spin" aria-pressed="false">Spin</button><button id="reset">Reset</button></div></div>
+<div class="group" id="model-select" aria-label="Choose model"><button data-model="both" aria-pressed="true">Both</button><button data-model="hippo" aria-pressed="false">Hippo</button><button data-model="cheetah" aria-pressed="false">Cheetah</button></div>
+<p id="description"></p>
+<details><summary>Print details</summary><p id="facts"></p><p>Both animals print inside their shells. Forked branches hold each animal by its sides. Opening force and branch release still need a physical test.</p></details>
+</main><script src="app.js?v=6c2c8f80"></script></body></html>
